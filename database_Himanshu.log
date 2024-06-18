@@ -1,0 +1,66 @@
+2024-06-06 14:01:27,002 INFO:package: mysql.connector.plugins
+2024-06-06 14:01:27,018 INFO:plugin_name: caching_sha2_password
+2024-06-06 14:01:27,018 INFO:AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2024-06-06 14:01:27,018 INFO:Connected to the database successfully
+2024-06-06 14:01:27,023 INFO:Table created or verified successfully
+2024-06-06 14:01:27,023 INFO:Data inserted: 88, Himanshu, 25, MCA
+2024-06-06 14:01:27,023 INFO:Data inserted: 68, Ankit, 30, MCA
+2024-06-06 14:01:27,023 INFO:Data inserted: 89, Rohit, 22, Btech
+2024-06-06 14:01:37,452 INFO:Data inserted: 99, him, 4, t
+2024-06-06 14:01:37,452 INFO:Data read successfully
+2024-06-06 14:01:37,462 INFO:Data updated successfully for Ankit in MCA
+2024-06-06 14:01:37,466 INFO:Data deleted successfully for Ankit in MCA
+2024-06-06 14:01:37,473 INFO:Connection closed successfully
+2024-06-06 14:01:37,484 INFO:Data appended to JSON file '.json'
+2024-06-07 12:12:36,479 INFO:package: mysql.connector.plugins
+2024-06-07 12:12:36,481 INFO:plugin_name: caching_sha2_password
+2024-06-07 12:12:36,481 INFO:AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2024-06-07 12:12:36,483 INFO:Connected to the database successfully
+2024-06-07 12:12:36,487 INFO:Table created or verified successfully
+2024-06-07 12:12:36,487 INFO:Data inserted: 88, Himanshu, 25, MCA
+2024-06-07 12:12:36,487 INFO:Data inserted: 68, Ankit, 30, MCA
+2024-06-07 12:12:36,487 INFO:Data inserted: 89, Rohit, 22, Btech
+2024-06-07 12:12:49,834 INFO:Data inserted: 8, k, 9, it
+2024-06-07 12:12:49,839 INFO:Data read successfully
+2024-06-07 12:12:49,843 INFO:Data updated successfully for Ankit in MCA
+2024-06-07 12:12:49,845 INFO:Data deleted successfully for Ankit in MCA
+2024-06-07 12:12:49,850 INFO:Connection closed successfully
+2024-06-07 12:12:49,881 INFO:Data appended to JSON file '.json'
+2024-06-13 00:17:21,901 INFO:package: mysql.connector.plugins
+2024-06-13 00:17:21,901 INFO:plugin_name: caching_sha2_password
+2024-06-13 00:17:21,901 INFO:AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2024-06-13 00:17:21,908 INFO:Connected to the database successfully
+2024-06-13 00:17:21,937 INFO:Table created or verified successfully
+2024-06-13 00:17:21,948 INFO:Data inserted: 88, Himanshu, 25, MCA
+2024-06-13 00:17:21,950 INFO:Data inserted: 68, Ankit, 30, MCA
+2024-06-13 00:17:21,950 INFO:Data inserted: 89, Rohit, 22, Btech
+2024-06-13 00:20:43,539 INFO:package: mysql.connector.plugins
+2024-06-13 00:20:43,541 INFO:plugin_name: caching_sha2_password
+2024-06-13 00:20:43,541 INFO:AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2024-06-13 00:20:43,550 INFO:Connected to the database successfully
+2024-06-13 00:20:43,566 INFO:Table created or verified successfully
+2024-06-13 00:20:43,576 INFO:Data inserted: 88, Himanshu, 25, MCA
+2024-06-13 00:20:43,577 INFO:Data inserted: 68, Ankit, 30, MCA
+2024-06-13 00:20:43,577 INFO:Data inserted: 89, Rohit, 22, Btech
+2024-06-18 11:42:28,200 INFO:package: mysql.connector.plugins
+2024-06-18 11:42:28,204 INFO:plugin_name: caching_sha2_password
+2024-06-18 11:42:28,204 INFO:AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2024-06-18 11:42:28,205 INFO:Connected to the database successfully
+2024-06-18 11:42:28,207 INFO:Table created or verified successfully
+2024-06-18 11:42:28,209 INFO:Data inserted: 88, Himanshu, 25, MCA
+2024-06-18 11:42:28,209 INFO:Data inserted: 68, Ankit, 30, MCA
+2024-06-18 11:42:28,209 INFO:Data inserted: 89, Rohit, 22, Btech
+2024-06-18 11:56:21,765 INFO:package: mysql.connector.plugins
+2024-06-18 11:56:21,770 INFO:plugin_name: caching_sha2_password
+2024-06-18 11:56:21,770 INFO:AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2024-06-18 11:56:21,772 INFO:Connected to the database successfully
+2024-06-18 11:56:21,774 INFO:Table created or verified successfully
+2024-06-18 11:56:21,776 INFO:Data inserted: 88, Himanshu, 25, MCA
+2024-06-18 11:56:21,776 INFO:Data inserted: 68, Ankit, 30, MCA
+2024-06-18 11:56:21,776 INFO:Data inserted: 89, Rohit, 22, Btech
+2024-06-18 11:56:30,837 INFO:Data inserted: 4, h, 8, n
+2024-06-18 11:56:30,843 INFO:Data read successfully
+2024-06-18 11:56:30,854 INFO:Data updated successfully for Ankit in MCA
+2024-06-18 11:56:30,876 INFO:Data deleted successfully for Ankit in MCA
+2024-06-18 11:56:30,879 INFO:Connection closed successfully
+2024-06-18 11:56:30,903 INFO:Data appended to JSON file '.json'

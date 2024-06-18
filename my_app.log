@@ -1,0 +1,122 @@
+2024-06-06 13:59:42,172 - INFO - mysql.connector - package: mysql.connector.plugins
+2024-06-06 13:59:42,172 - INFO - mysql.connector - plugin_name: caching_sha2_password
+2024-06-06 13:59:42,172 - INFO - mysql.connector - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2024-06-06 13:59:42,224 - INFO - __main__ - Connected to the database successfully
+2024-06-06 13:59:42,276 - INFO - __main__ - Fetched 94 rows from the database
+2024-06-06 13:59:42,276 - INFO - __main__ - Database connection closed
+2024-06-06 13:59:42,290 - INFO - pika.adapters.utils.connection_workflow - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2024-06-06 13:59:42,291 - INFO - pika.adapters.utils.io_services_utils - Socket connected: <socket.socket fd=1100, family=23, type=1, proto=6, laddr=('::1', 57833, 0, 0), raddr=('::1', 5672, 0, 0)>
+2024-06-06 13:59:42,292 - INFO - pika.adapters.utils.connection_workflow - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000021789AA3AD0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000021789AA3AD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-06-06 13:59:42,370 - INFO - pika.adapters.utils.connection_workflow - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000021789AA3AD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-06-06 13:59:42,371 - INFO - pika.adapters.utils.connection_workflow - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000021789AA3AD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-06-06 13:59:42,371 - INFO - pika.adapters.blocking_connection - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000021789AA3AD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-06-06 13:59:42,371 - INFO - pika.adapters.blocking_connection - Created channel=1
+2024-06-06 13:59:42,407 - INFO - __main__ - Connected to RabbitMQ successfully
+2024-06-06 13:59:42,426 - INFO - __main__ - Queue "hello" declared
+2024-06-06 13:59:42,427 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,427 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,428 - INFO - __main__ - Sent data to RabbitMQ: {"id": 2023, "name": "Himanshu", "age": 30, "Dept": "MCA"}
+2024-06-06 13:59:42,428 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,428 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,429 - INFO - __main__ - Sent data to RabbitMQ: {"id": 2023, "name": "Himanshu", "age": 30, "Dept": "MCA"}
+2024-06-06 13:59:42,429 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,429 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,429 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,430 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,430 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,431 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,433 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,433 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,433 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,434 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,434 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,434 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,434 - INFO - __main__ - Sent data to RabbitMQ: {"id": 2023, "name": "himanshu", "age": 23, "Dept": "MCA"}
+2024-06-06 13:59:42,435 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,435 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,435 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,436 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,436 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,437 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,437 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,437 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,437 - INFO - __main__ - Sent data to RabbitMQ: {"id": 2023, "name": "Himanshu", "age": 26, "Dept": "mmm"}
+2024-06-06 13:59:42,437 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,438 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,438 - INFO - __main__ - Sent data to RabbitMQ: {"id": 2020, "name": "hhhh", "age": 67, "Dept": "kkk"}
+2024-06-06 13:59:42,438 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,438 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,438 - INFO - __main__ - Sent data to RabbitMQ: {"id": 22, "name": "fff", "age": 55, "Dept": "hhhh"}
+2024-06-06 13:59:42,439 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,439 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,439 - INFO - __main__ - Sent data to RabbitMQ: {"id": 9, "name": "kk", "age": 26, "Dept": "mca"}
+2024-06-06 13:59:42,439 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,439 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,440 - INFO - __main__ - Sent data to RabbitMQ: {"id": 55555, "name": "hk", "age": 12, "Dept": "qer"}
+2024-06-06 13:59:42,440 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,440 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,440 - INFO - __main__ - Sent data to RabbitMQ: {"id": 8, "name": "himanshu", "age": 25, "Dept": "MCA IT"}
+2024-06-06 13:59:42,440 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,441 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,441 - INFO - __main__ - Sent data to RabbitMQ: {"id": 55, "name": "Himanshu kumar", "age": 25, "Dept": "MCAIT"}
+2024-06-06 13:59:42,441 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,441 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,441 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,442 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,442 - INFO - __main__ - Sent data to RabbitMQ: {"id": 23, "name": "Him", "age": 23, "Dept": "ii"}
+2024-06-06 13:59:42,442 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,442 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,442 - INFO - __main__ - Sent data to RabbitMQ: {"id": 1, "name": "kkk", "age": 67, "Dept": "uu"}
+2024-06-06 13:59:42,442 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,442 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,442 - INFO - __main__ - Sent data to RabbitMQ: {"id": 1, "name": "kkk", "age": 5, "Dept": "uu"}
+2024-06-06 13:59:42,443 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,443 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,443 - INFO - __main__ - Sent data to RabbitMQ: {"id": 5, "name": "him", "age": 67, "Dept": "y"}
+2024-06-06 13:59:42,443 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,443 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,443 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,444 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,444 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,444 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,444 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,444 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,444 - INFO - __main__ - Sent data to RabbitMQ: {"id": 254, "name": "kha", "age": 67, "Dept": "bk"}
+2024-06-06 13:59:42,445 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,445 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,445 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,445 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,445 - INFO - __main__ - Sent data to RabbitMQ: {"id": 5, "name": "nnn", "age": 55, "Dept": "dd"}
+2024-06-06 13:59:42,446 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,446 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,446 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "himu", "age": 22, "Dept": "It"}
+2024-06-06 13:59:42,447 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,447 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,447 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,451 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,451 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,451 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,452 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,452 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,452 - INFO - __main__ - Sent data to RabbitMQ: {"id": 8, "name": "kk", "age": 9, "Dept": "oo"}
+2024-06-06 13:59:42,452 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,453 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,453 - INFO - __main__ - Sent data to RabbitMQ: {"id": 5, "name": "ll", "age": 4, "Dept": "k"}
+2024-06-06 13:59:42,453 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,453 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,453 - INFO - __main__ - Sent data to RabbitMQ: {"id": 88, "name": "Himanshu", "age": 25, "Dept": "MCA"}
+2024-06-06 13:59:42,454 - INFO - __main__ - Sent data to RabbitMQ: {"id": 89, "name": "Rohit", "age": 22, "Dept": "Btech"}
+2024-06-06 13:59:42,454 - INFO - __main__ - Sent data to RabbitMQ: {"id": 7, "name": "k", "age": 8, "Dept": "h"}
+2024-06-06 13:59:42,454 - INFO - __main__ - Data successfully sent to RabbitMQ
+2024-06-06 13:59:42,454 - INFO - pika.adapters.blocking_connection - Closing connection (200): Normal shutdown
+2024-06-06 13:59:42,454 - INFO - pika.channel - Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000021789AA3AD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>>
+2024-06-06 13:59:42,455 - INFO - pika.channel - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000021789AA3AD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>>
+2024-06-06 13:59:42,455 - INFO - pika.connection - Closing connection (200): 'Normal shutdown'
+2024-06-06 13:59:42,457 - INFO - pika.adapters.utils.io_services_utils - Aborting transport connection: state=1; <socket.socket fd=1100, family=23, type=1, proto=6, laddr=('::1', 57833, 0, 0), raddr=('::1', 5672, 0, 0)>
+2024-06-06 13:59:42,457 - INFO - pika.adapters.utils.io_services_utils - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=1100, family=23, type=1, proto=6, laddr=('::1', 57833, 0, 0), raddr=('::1', 5672, 0, 0)>
+2024-06-06 13:59:42,457 - INFO - pika.adapters.utils.io_services_utils - Deactivating transport: state=1; <socket.socket fd=1100, family=23, type=1, proto=6, laddr=('::1', 57833, 0, 0), raddr=('::1', 5672, 0, 0)>
+2024-06-06 13:59:42,457 - INFO - pika.connection - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-06-06 13:59:42,457 - INFO - pika.connection - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-06-06 13:59:42,458 - INFO - pika.adapters.utils.io_services_utils - Closing transport socket and unlinking: state=3; <socket.socket fd=1100, family=23, type=1, proto=6, laddr=('::1', 57833, 0, 0), raddr=('::1', 5672, 0, 0)>
+2024-06-06 13:59:42,458 - INFO - pika.adapters.blocking_connection - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2024-06-06 13:59:42,458 - INFO - __main__ - RabbitMQ connection closed

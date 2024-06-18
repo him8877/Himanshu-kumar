@@ -1,0 +1,302 @@
+2024-06-06 14:03:49,466 - INFO - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2024-06-06 14:03:49,472 - INFO - Socket connected: <socket.socket fd=1108, family=23, type=1, proto=6, laddr=('::1', 57962, 0, 0), raddr=('::1', 5672, 0, 0)>
+2024-06-06 14:03:49,472 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001DAC33A2930>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001DAC33A2930> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-06-06 14:03:49,472 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001DAC33A2930> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-06-06 14:03:49,472 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001DAC33A2930> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-06-06 14:03:49,472 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001DAC33A2930> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-06-06 14:03:49,472 - INFO - Created channel=1
+2024-06-06 14:03:49,472 - INFO - Connected to RabbitMQ successfully
+2024-06-06 14:03:49,472 - INFO - Queue "hello" declared
+2024-06-06 14:03:49,483 - INFO - Started consuming from RabbitMQ
+2024-06-06 14:03:49,483 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:49,608 - INFO - package: mysql.connector.plugins
+2024-06-06 14:03:49,608 - INFO - plugin_name: caching_sha2_password
+2024-06-06 14:03:49,608 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2024-06-06 14:03:49,611 - INFO - Connected to the database successfully
+2024-06-06 14:03:49,615 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:49,615 - INFO - Database connection closed
+2024-06-06 14:03:49,617 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:49,732 - INFO - Connected to the database successfully
+2024-06-06 14:03:49,733 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:49,733 - INFO - Database connection closed
+2024-06-06 14:03:49,736 - INFO - Received data from RabbitMQ: {'id': 2023, 'name': 'Himanshu', 'age': 30, 'Dept': 'MCA'}
+2024-06-06 14:03:49,823 - INFO - Connected to the database successfully
+2024-06-06 14:03:49,830 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '2023' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:49,830 - INFO - Database connection closed
+2024-06-06 14:03:49,831 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:49,942 - INFO - Connected to the database successfully
+2024-06-06 14:03:49,945 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:49,945 - INFO - Database connection closed
+2024-06-06 14:03:49,945 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:50,069 - INFO - Connected to the database successfully
+2024-06-06 14:03:50,071 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:50,071 - INFO - Database connection closed
+2024-06-06 14:03:50,071 - INFO - Received data from RabbitMQ: {'id': 2023, 'name': 'Himanshu', 'age': 30, 'Dept': 'MCA'}
+2024-06-06 14:03:50,183 - INFO - Connected to the database successfully
+2024-06-06 14:03:50,199 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '2023' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:50,199 - INFO - Database connection closed
+2024-06-06 14:03:50,202 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:50,294 - INFO - Connected to the database successfully
+2024-06-06 14:03:50,294 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:50,294 - INFO - Database connection closed
+2024-06-06 14:03:50,297 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:50,383 - INFO - Connected to the database successfully
+2024-06-06 14:03:50,383 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:50,383 - INFO - Database connection closed
+2024-06-06 14:03:50,383 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:50,484 - INFO - Connected to the database successfully
+2024-06-06 14:03:50,484 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:50,484 - INFO - Database connection closed
+2024-06-06 14:03:50,484 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:50,583 - INFO - Connected to the database successfully
+2024-06-06 14:03:50,583 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:50,583 - INFO - Database connection closed
+2024-06-06 14:03:50,599 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:50,693 - INFO - Connected to the database successfully
+2024-06-06 14:03:50,693 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:50,693 - INFO - Database connection closed
+2024-06-06 14:03:50,696 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:50,792 - INFO - Connected to the database successfully
+2024-06-06 14:03:50,792 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:50,792 - INFO - Database connection closed
+2024-06-06 14:03:50,792 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:50,912 - INFO - Connected to the database successfully
+2024-06-06 14:03:50,912 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:50,915 - INFO - Database connection closed
+2024-06-06 14:03:50,916 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:51,008 - INFO - Connected to the database successfully
+2024-06-06 14:03:51,011 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:51,011 - INFO - Database connection closed
+2024-06-06 14:03:51,013 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:51,100 - INFO - Connected to the database successfully
+2024-06-06 14:03:51,100 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:51,115 - INFO - Database connection closed
+2024-06-06 14:03:51,116 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:51,205 - INFO - Connected to the database successfully
+2024-06-06 14:03:51,205 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:51,205 - INFO - Database connection closed
+2024-06-06 14:03:51,205 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:51,283 - INFO - Connected to the database successfully
+2024-06-06 14:03:51,283 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:51,283 - INFO - Database connection closed
+2024-06-06 14:03:51,299 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:51,402 - INFO - Connected to the database successfully
+2024-06-06 14:03:51,402 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:51,402 - INFO - Database connection closed
+2024-06-06 14:03:51,404 - INFO - Received data from RabbitMQ: {'id': 2023, 'name': 'himanshu', 'age': 23, 'Dept': 'MCA'}
+2024-06-06 14:03:51,501 - INFO - Connected to the database successfully
+2024-06-06 14:03:51,502 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '2023' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:51,502 - INFO - Database connection closed
+2024-06-06 14:03:51,502 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:51,625 - INFO - Connected to the database successfully
+2024-06-06 14:03:51,625 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:51,625 - INFO - Database connection closed
+2024-06-06 14:03:51,625 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:51,787 - INFO - Connected to the database successfully
+2024-06-06 14:03:51,790 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:51,790 - INFO - Database connection closed
+2024-06-06 14:03:51,790 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:51,884 - INFO - Connected to the database successfully
+2024-06-06 14:03:51,885 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:51,885 - INFO - Database connection closed
+2024-06-06 14:03:51,885 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:51,994 - INFO - Connected to the database successfully
+2024-06-06 14:03:51,997 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:51,997 - INFO - Database connection closed
+2024-06-06 14:03:51,998 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:52,104 - INFO - Connected to the database successfully
+2024-06-06 14:03:52,104 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:52,104 - INFO - Database connection closed
+2024-06-06 14:03:52,104 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:52,204 - INFO - Connected to the database successfully
+2024-06-06 14:03:52,204 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:52,204 - INFO - Database connection closed
+2024-06-06 14:03:52,204 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:52,323 - INFO - Connected to the database successfully
+2024-06-06 14:03:52,323 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:52,323 - INFO - Database connection closed
+2024-06-06 14:03:52,323 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:52,455 - INFO - Connected to the database successfully
+2024-06-06 14:03:52,458 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:52,458 - INFO - Database connection closed
+2024-06-06 14:03:52,460 - INFO - Received data from RabbitMQ: {'id': 2023, 'name': 'Himanshu', 'age': 26, 'Dept': 'mmm'}
+2024-06-06 14:03:52,595 - INFO - Connected to the database successfully
+2024-06-06 14:03:52,597 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '2023' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:52,597 - INFO - Database connection closed
+2024-06-06 14:03:52,603 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:52,723 - INFO - Connected to the database successfully
+2024-06-06 14:03:52,723 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:52,723 - INFO - Database connection closed
+2024-06-06 14:03:52,723 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:52,836 - INFO - Connected to the database successfully
+2024-06-06 14:03:52,837 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:52,837 - INFO - Database connection closed
+2024-06-06 14:03:52,837 - INFO - Received data from RabbitMQ: {'id': 2020, 'name': 'hhhh', 'age': 67, 'Dept': 'kkk'}
+2024-06-06 14:03:52,955 - INFO - Connected to the database successfully
+2024-06-06 14:03:52,955 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '2020' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:52,955 - INFO - Database connection closed
+2024-06-06 14:03:52,957 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:53,074 - INFO - Connected to the database successfully
+2024-06-06 14:03:53,074 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:53,074 - INFO - Database connection closed
+2024-06-06 14:03:53,074 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:53,166 - INFO - Connected to the database successfully
+2024-06-06 14:03:53,166 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:53,166 - INFO - Database connection closed
+2024-06-06 14:03:53,181 - INFO - Received data from RabbitMQ: {'id': 22, 'name': 'fff', 'age': 55, 'Dept': 'hhhh'}
+2024-06-06 14:03:53,272 - INFO - Connected to the database successfully
+2024-06-06 14:03:53,272 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '22' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:53,272 - INFO - Database connection closed
+2024-06-06 14:03:53,272 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:53,374 - INFO - Connected to the database successfully
+2024-06-06 14:03:53,374 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:53,374 - INFO - Database connection closed
+2024-06-06 14:03:53,378 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:53,539 - INFO - Connected to the database successfully
+2024-06-06 14:03:53,539 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:53,539 - INFO - Database connection closed
+2024-06-06 14:03:53,539 - INFO - Received data from RabbitMQ: {'id': 9, 'name': 'kk', 'age': 26, 'Dept': 'mca'}
+2024-06-06 14:03:53,708 - INFO - Connected to the database successfully
+2024-06-06 14:03:53,720 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '9' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:53,721 - INFO - Database connection closed
+2024-06-06 14:03:53,722 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:53,875 - INFO - Connected to the database successfully
+2024-06-06 14:03:53,879 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:53,879 - INFO - Database connection closed
+2024-06-06 14:03:53,879 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:53,992 - INFO - Connected to the database successfully
+2024-06-06 14:03:53,992 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:53,992 - INFO - Database connection closed
+2024-06-06 14:03:53,992 - INFO - Received data from RabbitMQ: {'id': 55555, 'name': 'hk', 'age': 12, 'Dept': 'qer'}
+2024-06-06 14:03:54,101 - INFO - Connected to the database successfully
+2024-06-06 14:03:54,101 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '55555' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:54,101 - INFO - Database connection closed
+2024-06-06 14:03:54,101 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:54,209 - INFO - Connected to the database successfully
+2024-06-06 14:03:54,209 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:54,209 - INFO - Database connection closed
+2024-06-06 14:03:54,209 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:54,300 - INFO - Connected to the database successfully
+2024-06-06 14:03:54,301 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:54,301 - INFO - Database connection closed
+2024-06-06 14:03:54,303 - INFO - Received data from RabbitMQ: {'id': 8, 'name': 'himanshu', 'age': 25, 'Dept': 'MCA IT'}
+2024-06-06 14:03:54,401 - INFO - Connected to the database successfully
+2024-06-06 14:03:54,403 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '8' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:54,403 - INFO - Database connection closed
+2024-06-06 14:03:54,403 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:54,501 - INFO - Connected to the database successfully
+2024-06-06 14:03:54,501 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:54,501 - INFO - Database connection closed
+2024-06-06 14:03:54,504 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:54,618 - INFO - Connected to the database successfully
+2024-06-06 14:03:54,622 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:54,622 - INFO - Database connection closed
+2024-06-06 14:03:54,623 - INFO - Received data from RabbitMQ: {'id': 55, 'name': 'Himanshu kumar', 'age': 25, 'Dept': 'MCAIT'}
+2024-06-06 14:03:54,723 - INFO - Connected to the database successfully
+2024-06-06 14:03:54,723 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '55' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:54,723 - INFO - Database connection closed
+2024-06-06 14:03:54,723 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:54,830 - INFO - Connected to the database successfully
+2024-06-06 14:03:54,831 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:54,832 - INFO - Database connection closed
+2024-06-06 14:03:54,834 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:54,940 - INFO - Connected to the database successfully
+2024-06-06 14:03:54,944 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:54,944 - INFO - Database connection closed
+2024-06-06 14:03:54,946 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:55,051 - INFO - Connected to the database successfully
+2024-06-06 14:03:55,051 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:55,051 - INFO - Database connection closed
+2024-06-06 14:03:55,054 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:55,168 - INFO - Connected to the database successfully
+2024-06-06 14:03:55,168 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:55,168 - INFO - Database connection closed
+2024-06-06 14:03:55,170 - INFO - Received data from RabbitMQ: {'id': 23, 'name': 'Him', 'age': 23, 'Dept': 'ii'}
+2024-06-06 14:03:55,270 - INFO - Connected to the database successfully
+2024-06-06 14:03:55,270 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '23' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:55,270 - INFO - Database connection closed
+2024-06-06 14:03:55,275 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:55,377 - INFO - Connected to the database successfully
+2024-06-06 14:03:55,381 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:55,381 - INFO - Database connection closed
+2024-06-06 14:03:55,382 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:55,483 - INFO - Connected to the database successfully
+2024-06-06 14:03:55,483 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:55,483 - INFO - Database connection closed
+2024-06-06 14:03:55,486 - INFO - Received data from RabbitMQ: {'id': 1, 'name': 'kkk', 'age': 67, 'Dept': 'uu'}
+2024-06-06 14:03:55,582 - INFO - Connected to the database successfully
+2024-06-06 14:03:55,582 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '1' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:55,582 - INFO - Database connection closed
+2024-06-06 14:03:55,588 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:55,684 - INFO - Connected to the database successfully
+2024-06-06 14:03:55,688 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:55,688 - INFO - Database connection closed
+2024-06-06 14:03:55,689 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:55,817 - INFO - Connected to the database successfully
+2024-06-06 14:03:55,818 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:55,819 - INFO - Database connection closed
+2024-06-06 14:03:55,819 - INFO - Received data from RabbitMQ: {'id': 1, 'name': 'kkk', 'age': 5, 'Dept': 'uu'}
+2024-06-06 14:03:55,921 - INFO - Connected to the database successfully
+2024-06-06 14:03:55,921 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '1' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:55,921 - INFO - Database connection closed
+2024-06-06 14:03:55,921 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:56,035 - INFO - Connected to the database successfully
+2024-06-06 14:03:56,037 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:56,037 - INFO - Database connection closed
+2024-06-06 14:03:56,038 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:56,152 - INFO - Connected to the database successfully
+2024-06-06 14:03:56,154 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:56,154 - INFO - Database connection closed
+2024-06-06 14:03:56,154 - INFO - Received data from RabbitMQ: {'id': 5, 'name': 'him', 'age': 67, 'Dept': 'y'}
+2024-06-06 14:03:56,287 - INFO - Connected to the database successfully
+2024-06-06 14:03:56,287 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '5' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:56,287 - INFO - Database connection closed
+2024-06-06 14:03:56,287 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:56,441 - INFO - Connected to the database successfully
+2024-06-06 14:03:56,441 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:56,441 - INFO - Database connection closed
+2024-06-06 14:03:56,441 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:56,570 - INFO - Connected to the database successfully
+2024-06-06 14:03:56,570 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:56,570 - INFO - Database connection closed
+2024-06-06 14:03:56,570 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:56,683 - INFO - Connected to the database successfully
+2024-06-06 14:03:56,683 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:56,683 - INFO - Database connection closed
+2024-06-06 14:03:56,686 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:56,772 - INFO - Connected to the database successfully
+2024-06-06 14:03:56,772 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:56,772 - INFO - Database connection closed
+2024-06-06 14:03:56,776 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:56,993 - INFO - Connected to the database successfully
+2024-06-06 14:03:56,993 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:56,993 - INFO - Database connection closed
+2024-06-06 14:03:56,993 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:03:57,268 - INFO - Connected to the database successfully
+2024-06-06 14:03:57,268 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '89' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:57,268 - INFO - Database connection closed
+2024-06-06 14:03:57,268 - INFO - Received data from RabbitMQ: {'id': 88, 'name': 'Himanshu', 'age': 25, 'Dept': 'MCA'}
+2024-06-06 14:03:57,399 - INFO - Connected to the database successfully
+2024-06-06 14:03:57,399 - ERROR - Error inserting data into the database: 1062 (23000): Duplicate entry '88' for key 'yourdata_new.PRIMARY'
+2024-06-06 14:03:57,399 - INFO - Database connection closed
+2024-06-06 14:03:57,405 - INFO - Received data from RabbitMQ: {'id': 89, 'name': 'Rohit', 'age': 22, 'Dept': 'Btech'}
+2024-06-06 14:04:00,698 - INFO - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2024-06-06 14:04:00,698 - INFO - Socket connected: <socket.socket fd=1304, family=23, type=1, proto=6, laddr=('::1', 58035, 0, 0), raddr=('::1', 5672, 0, 0)>
+2024-06-06 14:04:00,714 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000258788A2930>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000258788A2930> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-06-06 14:04:00,715 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000258788A2930> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-06-06 14:04:00,715 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000258788A2930> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-06-06 14:04:00,715 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000258788A2930> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-06-06 14:04:00,715 - INFO - Created channel=1
+2024-06-06 14:04:00,715 - INFO - Connected to RabbitMQ successfully
+2024-06-06 14:04:00,715 - INFO - Queue "hello" declared
+2024-06-06 14:04:00,715 - INFO - Started consuming from RabbitMQ
+2024-06-06 14:04:24,345 - INFO - Pika version 1.3.2 connecting to ('::1', 5672, 0, 0)
+2024-06-06 14:04:24,362 - INFO - Socket connected: <socket.socket fd=1332, family=23, type=1, proto=6, laddr=('::1', 58045, 0, 0), raddr=('::1', 5672, 0, 0)>
+2024-06-06 14:04:24,363 - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B0773A0500>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B0773A0500> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+2024-06-06 14:04:24,363 - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B0773A0500> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-06-06 14:04:24,363 - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B0773A0500> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-06-06 14:04:24,363 - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001B0773A0500> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+2024-06-06 14:04:24,363 - INFO - Created channel=1
+2024-06-06 14:04:24,363 - INFO - Connected to RabbitMQ successfully
+2024-06-06 14:04:24,368 - INFO - Queue "hello" declared
+2024-06-06 14:04:24,368 - INFO - Started consuming from RabbitMQ

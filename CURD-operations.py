@@ -10,12 +10,12 @@ conn = mysql.connector.connect(
 
 cursor = conn.cursor()
 
-# Create table
+# Create table Employee
 cursor.execute('''
     CREATE TABLE IF NOT EXISTS yourdata (id INT, name VARCHAR(255), age INT, dept VARCHAR(255))
 ''')
 
-# Insert data MySQL
+# Insert data MySQL Employee
 cursor.execute('''INSERT INTO yourdata (id, name, age, dept) VALUES (%s, %s, %s, %s)''', (88, 'Himanshu', 25, 'MCA'))
 cursor.execute('''INSERT INTO yourdata (id, name, age, dept) VALUES (%s, %s, %s, %s)''', (68, 'Ankit', 30, 'MCA'))
 cursor.execute('''INSERT INTO yourdata (id, name, age, dept) VALUES (%s, %s, %s, %s)''', (89, 'Rohit', 22, 'Btech'))
@@ -23,19 +23,20 @@ cursor.execute('''INSERT INTO yourdata (id, name, age, dept) VALUES (%s, %s, %s,
 # Commit 
 conn.commit()
 
-# Read data
+# Read data Employee
 cursor.execute("SELECT * FROM yourdata")
 rows = cursor.fetchall()
 print("Read Operations:")
 for row in rows:
     print(row)
 
-# Update data
+# Update data Employee
 cursor.execute("UPDATE yourdata SET age = %s WHERE name = %s AND dept = %s", (26, 'Ankit', 'MCA'))
 conn.commit()
 
-# Delete data 
+# Delete data Employee
 cursor.execute("DELETE FROM yourdata WHERE name = %s AND dept = %s", ('Ankit', 'MCA'))
+cursor.execute("DELETE FROM yourdata WHERE name = %s AND dept = %s", ('rohit', 'MCA'))
 conn.commit()
 
 # Close the MySQL connection

@@ -64,3 +64,18 @@
 2024-06-18 11:56:30,876 INFO:Data deleted successfully for Ankit in MCA
 2024-06-18 11:56:30,879 INFO:Connection closed successfully
 2024-06-18 11:56:30,903 INFO:Data appended to JSON file '.json'
+2024-06-18 13:19:59,840 INFO:package: mysql.connector.plugins
+2024-06-18 13:19:59,842 INFO:plugin_name: caching_sha2_password
+2024-06-18 13:19:59,842 INFO:AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2024-06-18 13:19:59,842 INFO:Connected to the database successfully
+2024-06-18 13:19:59,846 INFO:Table created or verified successfully
+2024-06-18 13:19:59,847 INFO:Data inserted: 88, Himanshu, 25, MCA
+2024-06-18 13:19:59,847 INFO:Data inserted: 68, Ankit, 30, MCA
+2024-06-18 13:19:59,847 INFO:Data inserted: 89, Rohit, 22, Btech
+2024-06-18 13:20:06,798 INFO:Data inserted: 8, k, 9, h
+2024-06-18 13:20:06,806 INFO:Data read successfully
+2024-06-18 13:20:06,821 INFO:Data updated successfully for Ankit in MCA
+2024-06-18 13:20:06,826 INFO:Data deleted successfully for Ankit in MCA
+2024-06-18 13:20:06,831 INFO:Connection closed successfully
+2024-06-18 13:20:06,831 ERROR:JSON file '.json' not found
+2024-06-18 13:20:06,845 INFO:Data appended to JSON file '.json'

@@ -1,0 +1,30 @@
+<!-- update.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Employee</title>
+</head>
+<body>
+    <h1>Update Employee</h1>
+    {% if employee %}
+    <form action="/data/{{ employee.id }}/update" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="{{ employee.name }}"><br><br>
+        
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" value="{{ employee.age }}"><br><br>
+        
+        <label for="dept">Department:</label>
+        <input type="text" id="dept" name="dept" value="{{ employee.dept }}"><br><br>
+        
+        <input type="submit" value="Update">
+    </form>
+    {% else %}
+    <p>Employee not found.</p>
+    {% endif %}
+    <br>
+    <a href="/data/{{ employee.id }}">Cancel</a>
+</body>
+</html>

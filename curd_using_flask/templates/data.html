@@ -1,0 +1,19 @@
+<!-- data.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+</head>
+<body>
+    <h1>Employee Details</h1>
+    <p><strong>Name:</strong> {{ employee.name }}</p>
+    <p><strong>ID:</strong> {{ employee.id }}</p>
+    <p><strong>Age:</strong> {{ employee.age }}</p>
+    <p><strong>Department:</strong> {{ employee.dept }}</p>
+    <a href="/data/{{ employee.id }}/update">Update</a> | <a href="/data/{{ employee.id }}/delete">Delete</a>
+    <br><br>
+    <a href="/data">Back to Employee List</a>
+</body>
+</html>

@@ -1,14 +1,11 @@
 from flask import Flask, Blueprint, request, jsonify
 from functools import wraps
+from config import  users
 
 # Flask initialization
 app = Flask(__name__)
 
-# User data
-users = {
-    "Himanshu": "Him@8850",
-    "Himanshu2": "Him@88502"
-}
+
 
 # Authentication decorator
 def authenticate(f):

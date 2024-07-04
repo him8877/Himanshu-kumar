@@ -42,24 +42,6 @@ class Item:
         self.name = name
         self.price = price
 
-# Initial data for items
-items = [
-    Item('Apple', 210.0),
-    Item('Banana', 100.0),
-    Item('Grapes', 80.0),
-    Item('Kiwi', 100.0),
-    Item('Onion', 80.0),
-    Item('Sweet Potato', 60.0), 
-    Item('Kurkure', 70.0),
-    Item('Chips', 80.0),
-    Item('Curd', 90.0),
-    Item('Headphone', 500.0),
-    Item('Chocolate', 110.0),  
-    Item('Dairy Milk', 180.0),  
-    Item('Salt', 30.0),
-    Item('Mango', 140.0),
-]
-
 # Blueprint for items API
 item_blueprint = Blueprint('items', __name__)
 

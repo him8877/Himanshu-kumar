@@ -48,7 +48,7 @@ def insert_initial_items():
     cursor.close()
     conn.close()
 
-# Blueprint for items API
+# Blueprint items API
 item_blueprint = Blueprint('items', __name__)
 
 # Validate request data

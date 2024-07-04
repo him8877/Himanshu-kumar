@@ -17,7 +17,7 @@ class Item:
         self.price = price
 
 # Initial data for items
-initial_items = [
+initial_item_list = [
     Item('Apple', 210.0),
     Item('Banana', 100.0),
     Item('Grapes', 80.0),
@@ -36,17 +36,17 @@ initial_items = [
 
 # Insert initial data into the database
 def insert_initial_items():
-    conn = get_db_connection()
-    cursor = conn.cursor()
+    connection = get_db_connection()
+    cursor = connection.cursor()
     cursor.execute("SELECT COUNT(*) FROM items")
     item_count = cursor.fetchone()[0]
     
     if item_count == 0:  # Only insert if table is empty
-        for item in initial_items:
+        for item in initial_item_list:
             cursor.execute("INSERT INTO items (name, price) VALUES (%s, %s)", (item.name, item.price))
-        conn.commit()
+        connection.commit()
     cursor.close()
-    conn.close()
+    connection.close()
 
 # Blueprint items API
 item_blueprint = Blueprint('items', __name__)
@@ -63,41 +63,41 @@ def home():
 @item_blueprint.route('/items', methods=['POST'])
 @authenticate
 def create_item():
-    data = request.get_json()
-    if not data or not validate_request_data(data, ['name', 'price']):
+    request_data = request.get_json()
+    if not request_data or not validate_request_data(request_data, ['name', 'price']):
         return jsonify({'message': 'Invalid data'}), 400
 
-    item = Item(name=data['name'], price=data['price'])
-    conn = get_db_connection()
-    cursor = conn.cursor()
-    cursor.execute("INSERT INTO items (name, price) VALUES (%s, %s)", (item.name, item.price))
-    conn.commit()
+    new_item = Item(name=request_data['name'], price=request_data['price'])
+    connection = get_db_connection()
+    cursor = connection.cursor()
+    cursor.execute("INSERT INTO items (name, price) VALUES (%s, %s)", (new_item.name, new_item.price))
+    connection.commit()
     cursor.close()
-    conn.close()
+    connection.close()
 
     return jsonify({'message': 'Item created'}), 201
 
 @item_blueprint.route('/items', methods=['GET'])
 @authenticate
 def get_items():
-    conn = get_db_connection()
-    cursor = conn.cursor()
+    connection = get_db_connection()
+    cursor = connection.cursor()
     cursor.execute("SELECT name, price FROM items")
-    items = cursor.fetchall()
+    item_list = cursor.fetchall()
     cursor.close()
-    conn.close()
+    connection.close()
 
-    return jsonify({'items': [{'name': item[0], 'price': item[1]} for item in items]}), 200
+    return jsonify({'items': [{'name': item[0], 'price': item[1]} for item in item_list]}), 200
 
 @item_blueprint.route('/items/<string:name>', methods=['GET'])
 @authenticate
 def get_item(name):
-    conn = get_db_connection()
-    cursor = conn.cursor()
+    connection = get_db_connection()
+    cursor = connection.cursor()
     cursor.execute("SELECT name, price FROM items WHERE name = %s", (name,))
     item = cursor.fetchone()
     cursor.close()
-    conn.close()
+    connection.close()
 
     if item:
         return jsonify({'name': item[0], 'price': item[1]}), 200

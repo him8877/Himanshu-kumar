@@ -3,12 +3,17 @@ import mysql.connector
 from config import db_config
 from auth import authenticate
 
-# Flask initialization
 app = Flask(__name__)
 
 # MySQL connection setup
 def get_db_connection():
-    return mysql.connector.connect(**db_config)
+    try:
+        connection = mysql.connector.connect(**db_config)
+        print("Database connection successful")
+        return connection
+    except mysql.connector.Error as err:
+        print(f"Database connection error: {err}")
+        return None
 
 # Class for items
 class Item:
@@ -37,13 +42,17 @@ initial_item_list = [
 # Insert initial data into the database
 def insert_initial_items():
     connection = get_db_connection()
+    if not connection:
+        return
     cursor = connection.cursor()
     cursor.execute("SELECT COUNT(*) FROM items")
     item_count = cursor.fetchone()[0]
+    print(f"Item count: {item_count}")
     
-    if item_count == 0:  # Only insert if table is empty
+    if item_count == 0:  
         for item in initial_item_list:
             cursor.execute("INSERT INTO items (name, price) VALUES (%s, %s)", (item.name, item.price))
+            print(f"Inserting item: {item.name}, {item.price}")
         connection.commit()
     cursor.close()
     connection.close()
@@ -69,6 +78,8 @@ def create_item():
 
     new_item = Item(name=request_data['name'], price=request_data['price'])
     connection = get_db_connection()
+    if not connection:
+        return jsonify({'message': 'Database connection error'}), 500
     cursor = connection.cursor()
     cursor.execute("INSERT INTO items (name, price) VALUES (%s, %s)", (new_item.name, new_item.price))
     connection.commit()
@@ -81,6 +92,8 @@ def create_item():
 @authenticate
 def get_items():
     connection = get_db_connection()
+    if not connection:
+        return jsonify({'message': 'Database connection error'}), 500
     cursor = connection.cursor()
     cursor.execute("SELECT name, price FROM items")
     item_list = cursor.fetchall()
@@ -93,6 +106,8 @@ def get_items():
 @authenticate
 def get_item(name):
     connection = get_db_connection()
+    if not connection:
+        return jsonify({'message': 'Database connection error'}), 500
     cursor = connection.cursor()
     cursor.execute("SELECT name, price FROM items WHERE name = %s", (name,))
     item = cursor.fetchone()
@@ -103,12 +118,11 @@ def get_item(name):
         return jsonify({'name': item[0], 'price': item[1]}), 200
     return jsonify({'message': 'Item not found'}), 404
 
-# Registering the blueprint for items API under /api prefix
+# blueprint for items API under /api 
 app.register_blueprint(item_blueprint, url_prefix='/api')
 
-# Insert initial items when the application starts
+# Insert initial items 
 insert_initial_items()
 
-# Running the Flask application
 if __name__ == '__main__':
     app.run(debug=True)

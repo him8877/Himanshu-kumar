@@ -29,7 +29,7 @@ class MongoDB:
             query = {
                 attribute: value
             }
-            records = self.collection.find(query).limit(20)
+            records = self.collection.find(query).limit(60)
             records = list(records)
             # List to store documents
             documents_list = []

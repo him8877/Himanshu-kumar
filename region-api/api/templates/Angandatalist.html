@@ -32,14 +32,14 @@
                 </select>
                 <span class="input-group-text" id="basic-addon1">Value</span>
                 <input type="text" class="form-control" placeholder="Enter Values" aria-label="Enter Values" aria-describedby="basic-addon1">
-                <button class="btn btn-outline-secondary" type="button">Submit</button>
+                <button class="btn btn-outline-secondary" type="button" onclick="submitForm()">Submit</button>
             </div>
         </div>
         <div class="row">
             <table class="table table-hover">
                 <thead class="table-primary">
                     <tr>
-                        <th scope="col">Sr No.</th>
+                        <th scope="col">#</th>
                         <th scope="col">AWC ID</th>
                         <th scope="col">AWC NAME</th>
                         <th scope="col">District ID</th>
@@ -53,7 +53,7 @@
                 <tbody>
                     {% for data in awc_data %}
                     <tr>
-                        <th scope="row">1</th>
+                        <th scope="row">{{ loop.index }}</th>
                         <td>{{ data.awc_id }}</td>
                         <td>{{ data.awc_name }}</td>
                         <td>{{ data.district_id }}</td>
@@ -70,5 +70,6 @@
             </table>
         </div>
     </div>
+    
 </body>
 </html>

@@ -1,0 +1,78 @@
+<!-- Datalist.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <title>AWC Data List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row pt-6">
+    <h1>AWC Data List</h1>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="input-group">
+                <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                  <option selected>Criteria...</option>
+                  <option value="1">AWC ID</option>
+                  <option value="2">AWC NAME</option>
+                  <option value="3">District ID</option>
+                  <option value="4">District Name</option>
+                  <option value="5">Project ID</option>
+                  <option value="6">Sector ID</option>
+                  <option value="7">State ID</option>
+                  <option value="8">State Name</option>
+                </select>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Value</span>
+                    <input type="text" class="form-control" placeholder="Enter Values" aria-label="Enter Values" aria-describedby="basic-addon1">
+                  </div>
+                <button class="btn btn-outline-secondary" type="button">Submit</button>
+              </div>
+        </div>
+        <div class="row">
+            <table class="table  table-hover">
+                <thead class="table-primary">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">AWC ID</th>
+                    <th scope="col">AWC NAME</th>
+                    <th scope="col">District ID</th>
+                    <th scope="col">District Name</th>
+                    <th scope="col">Project ID</th>
+                    <th scope="col">Sector ID</th>
+                    <th scope="col">State  ID</th>
+                    <th scope="col">State  Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    {% for data in awc_data %}
+                    <tr>
+                    <th scope="row">1</th>
+                    <td>{{data.awc_id}}</td>
+                    <td>{{data.awc_name}}</td>
+                    <td>{{data.district_id}}</td>
+                    <td>{{data.district_name}}</td>
+                    <td>{{data.project_id}}</td>
+                    <td>{{data.sector_id}}</td>
+                    <td>{{data.state_id}}</td>
+                    <td>{{data.state_name}}</td>
+                    
+                    
+                  </tr>
+                  {% else %}
+        <li>No AWC data available.</li>
+        {% endfor %}
+                </tbody>
+              </table>
+        </div>
+    </div>
+</body>
+</html>

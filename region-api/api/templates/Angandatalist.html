@@ -95,31 +95,47 @@
                 const awc_data = await response.json();
                 console.log('AWC Data:', awc_data);
 
+                myFunction(awc_data); // Pass the object directly to myFunction
+
                 const tableBody = document.querySelector('tbody');
                 tableBody.innerHTML = '';
 
-                awc_data.forEach((data, index) => {
-                    const row = `<tr>
-                        <th scope="row">${index + 1}</th>
-                        <td>${data.awc_id}</td>
-                        <td>${data.awc_name}</td>
-                        <td>${data.district_id}</td>
-                        <td>${data.district_name}</td>
-                        <td>${data.project_id}</td>
-                        <td>${data.sector_id}</td>
-                        <td>${data.state_id}</td>
-                        <td>${data.state_name}</td>
-                    </tr>`;
-                    tableBody.innerHTML += row;
-                });
+                if (typeof awc_data === 'object' && awc_data !== null) {
+                    const dataKeys = ['awc_id', 'awc_name', 'district_id', 'district_name', 'project_id', 'sector_id', 'state_id', 'state_name'];
+                    const isValidData = dataKeys.every(key => awc_data.hasOwnProperty(key));
 
-                if (awc_data.length === 0) {
-                    tableBody.innerHTML = '<tr><td colspan="9">No AWC data available.</td></tr>';
+                    if (isValidData) {
+                        const row = `<tr>
+                            <th scope="row">1</th>
+                            <td>${awc_data.awc_id}</td>
+                            <td>${awc_data.awc_name}</td>
+                            <td>${awc_data.district_id}</td>
+                            <td>${awc_data.district_name}</td>
+                            <td>${awc_data.project_id}</td>
+                            <td>${awc_data.sector_id}</td>
+                            <td>${awc_data.state_id}</td>
+                            <td>${awc_data.state_name}</td>
+                        </tr>`;
+                        tableBody.innerHTML = row;
+                    } else {
+                        tableBody.innerHTML = '<tr><td colspan="9">Invalid data format received.</td></tr>';
+                    }
+                } else {
+                    tableBody.innerHTML = '<tr><td colspan="9">Invalid data format received.</td></tr>';
                 }
             } catch (error) {
-                console.error('Fetch error:', error);
+                console.error('Fetch error:', error.message);
                 const tableBody = document.querySelector('tbody');
-                tableBody.innerHTML = '<tr><td colspan="9">Error fetching AWC data.</td></tr>';
+                tableBody.innerHTML = '<tr><td colspan="9">Error fetching AWC data: ' + error.message + '</td></tr>';
+            }
+        }
+
+        function myFunction(data) {
+            try {
+                // Data is already an object, no need to parse it
+                console.log(JSON.stringify(data));
+            } catch (e) {
+                console.log(e);
             }
         }
     </script>

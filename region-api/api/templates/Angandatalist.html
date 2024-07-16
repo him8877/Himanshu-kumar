@@ -1,4 +1,3 @@
-<!-- Datalist.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,14 +20,14 @@
             <div class="input-group mb-3">
                 <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
                     <option selected>Criteria...</option>
-                    <option value="1">AWC ID</option>
-                    <option value="2">AWC NAME</option>
-                    <option value="3">District ID</option>
-                    <option value="4">District Name</option>
-                    <option value="5">Project ID</option>
-                    <option value="6">Sector ID</option>
-                    <option value="7">State ID</option>
-                    <option value="8">State Name</option>
+                    <option value="awc_id">AWC ID</option>
+                    <option value="awc_name">AWC NAME</option>
+                    <option value="district_id">District ID</option>
+                    <option value="district_name">District Name</option>
+                    <option value="project_id">Project ID</option>
+                    <option value="sector_id">Sector ID</option>
+                    <option value="state_id">State ID</option>
+                    <option value="state_name">State Name</option>
                 </select>
                 <span class="input-group-text" id="basic-addon1">Value</span>
                 <input type="text" class="form-control" placeholder="Enter Values" aria-label="Enter Values" aria-describedby="basic-addon1">
@@ -59,7 +58,7 @@
                         <td>{{ data.district_id }}</td>
                         <td>{{ data.district_name }}</td>
                         <td>{{ data.project_id }}</td>
-                        <td>{{ data.sector_id }}</td> 
+                        <td>{{ data.sector_id }}</td>
                         <td>{{ data.state_id }}</td>
                         <td>{{ data.state_name }}</td>
                     </tr>
@@ -74,8 +73,8 @@
         async function submitForm() {
             const criteria = document.getElementById('inputGroupSelect04').value;
             const value = document.querySelector('input[aria-label="Enter Values"]').value;
-            
-            console.log('Criteria:', criteria, 'Value:', value); 
+
+            console.log('Criteria:', criteria, 'Value:', value);
 
             try {
                 const response = await fetch('/get-by-state-id', {
@@ -94,7 +93,7 @@
                 }
 
                 const awc_data = await response.json();
-                console.log('AWC Data:', awc_data); 
+                console.log('AWC Data:', awc_data);
 
                 const tableBody = document.querySelector('tbody');
                 tableBody.innerHTML = '';
@@ -119,8 +118,10 @@
                 }
             } catch (error) {
                 console.error('Fetch error:', error);
+                const tableBody = document.querySelector('tbody');
+                tableBody.innerHTML = '<tr><td colspan="9">Error fetching AWC data.</td></tr>';
             }
         }
-    </script>    
+    </script>
 </body>
 </html>
